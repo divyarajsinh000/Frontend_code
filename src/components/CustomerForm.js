@@ -10,7 +10,7 @@ function CustomerForm() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('https://car-fitness-point-production.up.railway.app/customers', formData);
+            await axios.post('https://exciting-art-production.up.railway.app/customers', formData);
             alert('Customer added successfully!');
             setFormData({ CustomerName: '', MobileNo: '' }); // Reset form
         } catch (error) {

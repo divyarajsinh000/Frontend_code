@@ -12,7 +12,7 @@ function EditCustomerForm() {
     useEffect(() => {
         const fetchCustomer = async () => {
             try {
-                const response = await axios.get(`https://car-fitness-point-production.up.railway.app/customers/${customerId}`);
+                const response = await axios.get(`https://exciting-art-production.up.railway.app/customers/${customerId}`);
                 setFormData({
                     CustomerName: response.data.CustomerName,
                     MobileNo: response.data.MobileNo,
@@ -30,7 +30,7 @@ function EditCustomerForm() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.patch(`https://car-fitness-point-production.up.railway.app/customers/${customerId}`, formData);
+            await axios.patch(`https://exciting-art-production.up.railway.app/customers/${customerId}`, formData);
             alert('Customer updated successfully!');
             navigate('/customers'); // Navigate back to customer list page (or any other page)
         } catch (error) {

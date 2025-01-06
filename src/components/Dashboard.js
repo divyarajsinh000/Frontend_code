@@ -10,7 +10,7 @@ function Dashboard() {
 
    
     useEffect(() => {
-        axios.get('https://car-fitness-point-production.up.railway.app/dashboard')
+        axios.get('https://exciting-art-production.up.railway.app/dashboard')
             .then((res) => {
                 setCount(res.data);
             })

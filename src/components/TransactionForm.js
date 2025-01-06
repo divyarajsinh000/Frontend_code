@@ -11,7 +11,7 @@ function TransactionForm() {
    
     useEffect(() => {
         axios
-            .get('https://car-fitness-point-production.up.railway.app/customers')
+            .get('https://exciting-art-production.up.railway.app/customers')
             .then((res) => setCustomers(res.data))
             .catch((error) => console.error('Failed to fetch customers:', error));
     }, []);
@@ -19,7 +19,7 @@ function TransactionForm() {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            await axios.post('https://car-fitness-point-production.up.railway.app/transactions', formData);
+            await axios.post('https://exciting-art-production.up.railway.app/transactions', formData);
             alert('Transaction added successfully!');
             navigate('/transactionlist')
             setFormData({ CustomerId: '', VehicleNo: '', OperationDate: '' }); // Reset form
